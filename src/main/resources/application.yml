@@ -1,0 +1,21 @@
+server:
+  port: 18082
+spring:
+  profiles:
+    active: local
+mybatis-plus:
+  typeAliasesPackage: com.ferrum.hjtown.bean.model
+  configuration:
+    cacheEnabled: false
+    lazyLoadingEnabled: true
+    logImpl: org.apache.ibatis.logging.stdout.StdOutImpl
+  globalConfig:
+    banner: false
+    dbConfig:
+      idType: AUTO
+      table-underline: true
+      logic-not-delete-value: 0
+      logic-delete-value: 1
+      logic-delete-field: delStatus
+
+
